@@ -1,0 +1,20 @@
+{
+  "name": "wall-paint-visualizer",
+  "version": "1.0.0",
+  "description": "Smart Wall Paint Visualizer - MEAN Stack Application",
+  "scripts": {
+    "start:server": "cd server && npm start",
+    "dev:server": "cd server && npm run dev",
+    "start:client": "cd client && npm start",
+    "build:client": "cd client && npm run build",
+    "seed": "cd server && npm run seed",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run start:client\""
+  },
+  "keywords": ["wall-paint", "visualizer", "mean-stack", "angular", "nodejs", "mongodb"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
