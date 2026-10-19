@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: smart-wall-painter
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        value: wall-paint-visualizer-secret-key-2024
+      - key: MONGODB_URI
+        value: mongodb+srv://arunbadgujjar9897769094_db_user:DVwBdw8iuNzWzL2P@cluster0.khgrnj2.mongodb.net/wall-paint-visualizer?retryWrites=true&w=majority
