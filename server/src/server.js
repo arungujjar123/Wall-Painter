@@ -65,17 +65,22 @@ app.use('/api/patterns', patternRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/admin', adminRoutes);
 
-// Root Welcome Route
-app.get('/', (req, res) => {
-  res.json({
-    name: 'Smart Wall Paint Visualizer API',
-    version: '1.0.0',
-    documentation: '/api/health',
-  });
-});
-
 // Global Error Handler
 app.use(errorHandler);
+
+// Serve Frontend in Production
+const clientBuildPath = path.join(__dirname, '../../client/dist/client/browser');
+const fs = require('fs');
+if (fs.existsSync(clientBuildPath)) {
+  app.use(express.static(clientBuildPath));
+
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) {
+      return next();
+    }
+    res.sendFile(path.join(clientBuildPath, 'index.html'));
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 const server = app.listen(PORT, () => {
