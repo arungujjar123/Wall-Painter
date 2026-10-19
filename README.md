@@ -4,12 +4,22 @@
 > Developed for **Unified Mentor** Capstone Evaluation.
 > Inspired by the [Behr Paint Visualizer](https://www.behr.com/consumer/colors/paint).
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-wall--painter--qmfe.onrender.com-00e5a3.svg?style=for-the-badge&logo=render)](https://wall-painter-qmfe.onrender.com/)
+[![Project Report](https://img.shields.io/badge/Documentation-Project%20Report-blue.svg?style=for-the-badge&logo=googledocs)](PROJECT_REPORT.md)
+
 [![MEAN Stack](https://img.shields.io/badge/Stack-MEAN-green.svg)](https://en.wikipedia.org/wiki/MEAN_(solution_stack))
 [![Angular](https://img.shields.io/badge/Angular-17.x-dd0031.svg?logo=angular)](https://angular.io)
 [![Node.js](https://img.shields.io/badge/Node.js-20.x-339933.svg?logo=node.js)](https://nodejs.org)
 [![Express](https://img.shields.io/badge/Express-4.x-000000.svg?logo=express)](https://expressjs.com)
 [![MongoDB](https://img.shields.io/badge/MongoDB-8.x-47A248.svg?logo=mongodb)](https://mongodb.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+---
+
+### 🌐 Quick Links
+- 🚀 **Live Deployed Application:** [https://wall-painter-qmfe.onrender.com/](https://wall-painter-qmfe.onrender.com/)
+- 📄 **Full Technical Project Report:** [PROJECT_REPORT.md](PROJECT_REPORT.md)
+- 📡 **API Health Status:** [https://wall-painter-qmfe.onrender.com/api/health](https://wall-painter-qmfe.onrender.com/api/health)
 
 ---
 
