@@ -4,7 +4,7 @@
   "description": "Smart Wall Paint Visualizer - MEAN Stack Application",
   "scripts": {
     "start": "node server/src/server.js",
-    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build && npm --prefix server install",
     "start:server": "cd server && npm start",
     "dev:server": "cd server && npm run dev",
     "start:client": "cd client && npm start",
